@@ -1,0 +1,60 @@
+{
+  "workshops": [
+    {
+      "id": 1,
+      "title": "Urban Composting 101",
+      "description": "Learn how to turn kitchen scraps into nutrient-rich soil for your plants. Perfect for apartment dwellers and small spaces.",
+      "category": "Gardening",
+      "image": "https://images.unsplash.com/photo-1531226406509-1e0c09f7deab?w=400",
+      "date": "2026-06-15T10:00:00",
+      "duration": "3 hours",
+      "instructor": "Maria Green",
+      "price": 25,
+      "availability": 15,
+      "location": "Outdoor Garden Center",
+      "weather": true
+    },
+    {
+      "id": 2,
+      "title": "DIY Natural Cleaning Products",
+      "description": "Make your own non-toxic cleaning products using simple ingredients like vinegar, baking soda, and essential oils.",
+      "category": "Home",
+      "image": "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=400",
+      "date": "2026-06-20T14:00:00",
+      "duration": "2 hours",
+      "instructor": "John Eco",
+      "price": 30,
+      "availability": 20,
+      "location": "Community Center",
+      "weather": false
+    },
+    {
+      "id": 3,
+      "title": "Sustainable Urban Gardening",
+      "description": "Learn water-saving techniques, companion planting, and organic pest control for your urban garden.",
+      "category": "Gardening",
+      "image": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=400",
+      "date": "2026-07-01T09:00:00",
+      "duration": "4 hours",
+      "instructor": "Sarah Bloom",
+      "price": 35,
+      "availability": 10,
+      "location": "Rooftop Garden",
+      "weather": true
+    },
+    {
+      "id": 4,
+      "title": "Zero Waste Living Workshop",
+      "description": "Practical tips and tricks to reduce your waste footprint. Learn about bulk shopping, reusable alternatives, and more.",
+      "category": "Lifestyle",
+      "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400",
+      "date": "2026-07-10T13:00:00",
+      "duration": "2.5 hours",
+      "instructor": "Emma Zero",
+      "price": 28,
+      "availability": 25,
+      "location": "Eco Hub",
+      "weather": false
+    }
+  ]
+}

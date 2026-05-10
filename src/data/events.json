@@ -1,0 +1,56 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Community Cleanup Day",
+      "description": "Join us for a neighborhood cleanup! We'll provide gloves, bags, and refreshments. Let's make our community beautiful again.",
+      "category": "Community",
+      "image": "https://images.unsplash.com/photo-1523741549496-81d4e4b6c697?w=400",
+      "date": "2026-06-22T09:00:00",
+      "location": "Central Park",
+      "capacity": 50,
+      "registered": 32,
+      "free": true,
+      "weather": true
+    },
+    {
+      "id": 2,
+      "title": "Farmers Market Festival",
+      "description": "Celebrate local farmers and artisans! Fresh produce, handmade crafts, live music, and family activities.",
+      "category": "Market",
+      "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=400",
+      "date": "2026-06-29T10:00:00",
+      "location": "Downtown Plaza",
+      "capacity": 200,
+      "registered": 145,
+      "free": true,
+      "weather": true
+    },
+    {
+      "id": 3,
+      "title": "Climate Action Panel Discussion",
+      "description": "Expert panel discussing local climate initiatives and how you can get involved. Q&A session included.",
+      "category": "Education",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400",
+      "date": "2026-07-05T18:30:00",
+      "location": "Public Library",
+      "capacity": 80,
+      "registered": 45,
+      "free": true,
+      "weather": false
+    },
+    {
+      "id": 4,
+      "title": "Plant Swap & Social",
+      "description": "Bring your plant cuttings and swap with fellow plant lovers! All experience levels welcome.",
+      "category": "Social",
+      "image": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=400",
+      "date": "2026-07-12T14:00:00",
+      "location": "Botanical Garden",
+      "capacity": 60,
+      "registered": 28,
+      "free": true,
+      "weather": true
+    }
+  ]
+}

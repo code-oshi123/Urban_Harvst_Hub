@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Bamboo Toothbrush Set",
+      "description": "Eco-friendly bamboo toothbrushes with biodegradable bristles. Set of 4 brushes with charcoal-infused bristles for natural whitening.",
+      "category": "Personal Care",
+      "image": "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=400",
+      "price": 12.99,
+      "availability": true,
+      "sustainability": "100% biodegradable, plastic-free packaging"
+    },
+    {
+      "id": 2,
+      "name": "Reusable Produce Bags",
+      "description": "Set of 6 mesh produce bags made from organic cotton. Perfect for grocery shopping to reduce plastic waste.",
+      "category": "Kitchen",
+      "image": "https://images.unsplash.com/photo-1610349918720-36cde6f7e1e8?w=400",
+      "price": 18.99,
+      "availability": true,
+      "sustainability": "Organic cotton, zero waste"
+    },
+    {
+      "id": 3,
+      "name": "Stainless Steel Straws",
+      "description": "Set of 8 reusable stainless steel straws with cleaning brush. Includes straight and angled options.",
+      "category": "Kitchen",
+      "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400",
+      "price": 9.99,
+      "availability": true,
+      "sustainability": "Reusable for life, reduces single-use plastic"
+    },
+    {
+      "id": 4,
+      "name": "Compostable Trash Bags",
+      "description": "35-gallon compostable trash bags made from plant-based materials. Perfect for kitchen and yard waste.",
+      "category": "Home",
+      "image": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400",
+      "price": 24.99,
+      "availability": false,
+      "sustainability": "ASTM D6400 certified compostable"
+    },
+    {
+      "id": 5,
+      "name": "Solar Powered Phone Charger",
+      "description": "Portable 20000mAh solar charger with dual USB ports. Perfect for outdoor enthusiasts.",
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=400",
+      "price": 49.99,
+      "availability": true,
+      "sustainability": "Renewable energy, reduces grid electricity use"
+    },
+    {
+      "id": 6,
+      "name": "Beeswax Food Wraps",
+      "description": "Set of 3 reusable beeswax wraps for food storage. Alternative to plastic wrap.",
+      "category": "Kitchen",
+      "image": "https://images.unsplash.com/photo-1616683693504-3e7e5b1d6a2b?w=400",
+      "price": 15.99,
+      "availability": true,
+      "sustainability": "Washable, reusable, biodegradable"
+    }
+  ]
+}

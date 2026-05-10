@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Organic Veg Box",
+    "category": "food",
+    "type": "product",
+    "description": "A weekly box of locally sourced organic vegetables, supporting local farmers.",
+    "price": 24.99,
+    "available": true,
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600"
+  },
+  {
+    "id": "2",
+    "title": "Zero-Waste Cooking Workshop",
+    "category": "education",
+    "type": "workshop",
+    "description": "Learn to cook delicious meals with zero food waste. Hands-on session with a local chef.",
+    "price": 15.00,
+    "available": true,
+    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600"
+  },
+  {
+    "id": "3",
+    "title": "Community Garden Day",
+    "category": "lifestyle",
+    "type": "event",
+    "description": "Join your neighbours to plant, grow and harvest together at the urban garden.",
+    "price": 0,
+    "available": true,
+    "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600"
+  },
+  {
+    "id": "4",
+    "title": "Beeswax Wraps Pack",
+    "category": "lifestyle",
+    "type": "product",
+    "description": "Reusable beeswax food wraps — a sustainable alternative to cling film.",
+    "price": 12.50,
+    "available": false,
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600"
+  },
+  {
+    "id": "5",
+    "title": "Composting Masterclass",
+    "category": "education",
+    "type": "workshop",
+    "description": "Turn your kitchen scraps into gold. A practical guide to home composting.",
+    "price": 10.00,
+    "available": true,
+    "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600"
+  },
+  {
+    "id": "6",
+    "title": "Eco Market Day",
+    "category": "food",
+    "type": "event",
+    "description": "Monthly market featuring local producers, sustainable goods, and live music.",
+    "price": 0,
+    "available": true,
+    "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=600"
+  }
+]
