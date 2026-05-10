@@ -46,4 +46,4 @@ const WeatherWidget = ({ location }) => {
   )
 }
 
-export default WeatherWidget
+export default WeatherWidget  
