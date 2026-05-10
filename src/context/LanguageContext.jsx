@@ -21,7 +21,7 @@ export const LanguageProvider = ({ children }) => {
       workshops: 'Workshops',
       events: 'Events',
       about: 'About',
-      
+
       // Buttons
       bookNow: 'Book Now',
       register: 'Register',
@@ -36,7 +36,7 @@ export const LanguageProvider = ({ children }) => {
       goBack: 'Go Back',
       emailUs: 'Email Us',
       callUs: 'Call Us',
-      
+
       // Form labels
       name: 'Name',
       email: 'Email',
@@ -45,7 +45,7 @@ export const LanguageProvider = ({ children }) => {
       specialRequests: 'Special Requests',
       numberOfGuests: 'Number of Guests',
       enterEmail: 'Enter your email',
-      
+
       // Search & Filter
       search: 'Search...',
       allCategories: 'All Categories',
@@ -54,7 +54,7 @@ export const LanguageProvider = ({ children }) => {
       priceHighLow: 'Price: High to Low',
       dateSoonest: 'Date: Soonest First',
       spotsFirst: 'Availability: Most Spots First',
-      
+
       // Status
       loading: 'Loading...',
       error: 'An error occurred',
@@ -65,7 +65,7 @@ export const LanguageProvider = ({ children }) => {
       confirmed: 'Confirmed',
       priceFree: 'FREE',
       fullyBooked: 'Event Fully Booked',
-      
+
       // Product related
       price: 'Price',
       availability: 'Availability',
@@ -73,25 +73,25 @@ export const LanguageProvider = ({ children }) => {
       productDetails: 'Product Details',
       viewDetailsFor: 'View details for',
       book: 'Book',
-      
+
       // Workshop related
       date: 'Date',
       duration: 'Duration',
       instructor: 'Instructor',
       location: 'Location',
       whatYoullLearn: 'What You\'ll Learn',
-      
+
       // Event related
       capacity: 'Capacity',
       registered: 'Registered',
       spotsLeft: 'spots left',
       eventHighlights: 'Event Highlights',
-      
+
       // Weather
       weatherInfo: 'Weather Info',
       outdoorEvent: 'Outdoor Event',
       indoorEvent: 'Indoor Event',
-      
+
       // Home page
       heroTitle: 'Welcome to Urban Harvest Hub',
       heroSubtitle: 'Your one-stop destination for sustainable living',
@@ -108,7 +108,7 @@ export const LanguageProvider = ({ children }) => {
       communityEventsTitle: 'Community Events',
       stayUpdated: 'Stay Updated',
       newsletterText: 'Subscribe to our newsletter for eco-friendly tips and exclusive offers',
-      
+
       // Products page
       ourProducts: 'Our Eco-Friendly Products',
       productsDesc: 'Discover our curated collection of sustainable products designed to help you live a greener lifestyle',
@@ -116,7 +116,7 @@ export const LanguageProvider = ({ children }) => {
       eventsDesc: 'Join our community events and connect with like-minded individuals passionate about sustainability',
       found: 'Found',
       noResults: 'No products found matching your criteria.',
-      
+
       // Detail pages
       productNotFound: 'Product not found',
       workshopNotFound: 'Workshop not found',
@@ -124,14 +124,14 @@ export const LanguageProvider = ({ children }) => {
       backToProducts: 'Back to Products',
       backToWorkshops: 'Back to Workshops',
       backToEvents: 'Back to Events',
-      
+
       // Booking page
       myBookings: 'My Bookings',
       noBookings: 'You have no bookings yet.',
       browseProducts: 'Browse Products',
       bookedOn: 'Booked on',
       type: 'Type',
-      
+
       // About page
       aboutUs: 'About Urban Harvest Hub',
       aboutDesc: 'Empowering communities to live sustainably through education, products, and connection',
@@ -139,19 +139,19 @@ export const LanguageProvider = ({ children }) => {
       missionText: 'At Urban Harvest Hub, we believe that sustainable living should be accessible to everyone. Our mission is to bridge the gap between eco-conscious consumers and sustainable solutions by providing high-quality products, educational workshops, and community events that inspire positive environmental action.',
       ourCoreValues: 'Our Core Values',
       ourStory: 'Our Story',
-      storyText1: 'Founded in 2024, Urban Harvest Hub started as a small community initiative focused on promoting urban gardening and sustainable living practices in our local neighborhood.',
+      storyText1: 'Founded in 2026, Urban Harvest Hub started as a small community initiative focused on promoting urban gardening and sustainable living practices in our local neighborhood.',
       storyText2: 'What began as a weekend gardening club has grown into a thriving platform connecting thousands of eco-conscious individuals with sustainable products, educational workshops, and community events.',
       storyText3: 'Today, we\'re proud to serve a growing community of changemakers who are committed to making sustainable living a reality in urban environments.',
       meetOurTeam: 'Meet Our Team',
       getInTouch: 'Get In Touch',
       contactText: 'Have questions or want to collaborate? We\'d love to hear from you!',
-      
+
       // Footer
       quickLinks: 'Quick Links',
       contactUs: 'Contact Us',
       followUs: 'Follow Us',
       allRightsReserved: 'All rights reserved.',
-      
+
       // 404 page
       pageNotFound: 'Page Not Found',
       pageNotFoundDesc: 'Oops! The page you\'re looking for doesn\'t exist or has been moved.'
@@ -163,7 +163,7 @@ export const LanguageProvider = ({ children }) => {
       workshops: 'වැඩමුළු',
       events: 'උත්සව',
       about: 'අපි ගැන',
-      
+
       // Buttons
       bookNow: 'දැන් වෙන්කරවා ගන්න',
       register: 'ලියාපදිංචි වන්න',
@@ -178,7 +178,7 @@ export const LanguageProvider = ({ children }) => {
       goBack: 'ආපසු යන්න',
       emailUs: 'අපට විද්‍යුත් තැපෑලක් යවන්න',
       callUs: 'අපට අමතන්න',
-      
+
       // Form labels
       name: 'නම',
       email: 'විද්‍යුත් තැපෑල',
@@ -187,7 +187,7 @@ export const LanguageProvider = ({ children }) => {
       specialRequests: 'විශේෂ ඉල්ලීම්',
       numberOfGuests: 'ආරාධිතයන් ගණන',
       enterEmail: 'ඔබගේ විද්‍යුත් තැපෑල ඇතුළත් කරන්න',
-      
+
       // Search & Filter
       search: 'සොයන්න...',
       allCategories: 'සියලුම කාණ්ඩ',
@@ -196,7 +196,7 @@ export const LanguageProvider = ({ children }) => {
       priceHighLow: 'මිල: වැඩියෙන් අඩුට',
       dateSoonest: 'දිනය: ලඟම පළමුව',
       spotsFirst: 'පවතින බව: වැඩිම ඉඩකඩ පළමුව',
-      
+
       // Status
       loading: 'පූරණය වෙමින්...',
       error: 'දෝෂයක් ඇතිවිය',
@@ -207,7 +207,7 @@ export const LanguageProvider = ({ children }) => {
       confirmed: 'තහවුරු කර ඇත',
       priceFree: 'නොමිලේ',
       fullyBooked: 'උත්සවය සම්පූර්ණයෙන් වෙන්කරවා ඇත',
-      
+
       // Product related
       price: 'මිල',
       availability: 'පවතින බව',
@@ -215,25 +215,25 @@ export const LanguageProvider = ({ children }) => {
       productDetails: 'නිෂ්පාදන විස්තර',
       viewDetailsFor: 'සඳහා විස්තර බලන්න',
       book: 'වෙන්කරවා ගන්න',
-      
+
       // Workshop related
       date: 'දිනය',
       duration: 'කාලසීමාව',
       instructor: 'උපදේශක',
       location: 'ස්ථානය',
       whatYoullLearn: 'ඔබ ඉගෙන ගන්නේ කුමක්ද',
-      
+
       // Event related
       capacity: 'ධාරිතාව',
       registered: 'ලියාපදිංචි වී ඇත',
       spotsLeft: 'ඉඩකඩ ඉතිරිව ඇත',
       eventHighlights: 'උත්සව විශේෂාංග',
-      
+
       // Weather
       weatherInfo: 'කාලගුණ තොරතුරු',
       outdoorEvent: 'එළිමහන් උත්සවය',
       indoorEvent: 'ගෘහස්ථ උත්සවය',
-      
+
       // Home page
       heroTitle: 'අර්බන් හාර්වෙස්ට් හබ් වෙත සාදරයෙන් පිළිගනිමු',
       heroSubtitle: 'තිරසාර ජීවන රටාවක් සඳහා ඔබේ එකම ගමනාන්තය',
@@ -250,7 +250,7 @@ export const LanguageProvider = ({ children }) => {
       communityEventsTitle: 'ප්‍රජා උත්සව',
       stayUpdated: 'යාවත්කාලීනව තබාගන්න',
       newsletterText: 'පරිසර හිතකාමී උපදෙස් සහ විශේෂ දීමනා සඳහා අපගේ පුවත් පතට දායක වන්න',
-      
+
       // Products page
       ourProducts: 'අපගේ පරිසර හිතකාමී නිෂ්පාදන',
       productsDesc: 'හරිත ජීවන රටාවක් ගත කිරීමට ඔබට උපකාර වන තිරසාර නිෂ්පාදන එකතුව සොයා ගන්න',
@@ -258,7 +258,7 @@ export const LanguageProvider = ({ children }) => {
       eventsDesc: 'අපගේ ප්‍රජා සිදුවීම් වලට එක්වී තිරසාරභාවය පිළිබඳ උද්‍යෝගිමත් සමාන අදහස් ඇති පුද්ගලයින් සමඟ සම්බන්ධ වන්න',
       found: 'හමු විය',
       noResults: 'ඔබගේ නිර්ණායකවලට ගැලපෙන නිෂ්පාදන හමු නොවීය.',
-      
+
       // Detail pages
       productNotFound: 'නිෂ්පාදනය හමු නොවීය',
       workshopNotFound: 'වැඩමුළුව හමු නොවීය',
@@ -266,14 +266,14 @@ export const LanguageProvider = ({ children }) => {
       backToProducts: 'නිෂ්පාදන වෙත ආපසු',
       backToWorkshops: 'වැඩමුළු වෙත ආපසු',
       backToEvents: 'උත්සව වෙත ආපසු',
-      
+
       // Booking page
       myBookings: 'මගේ වෙන්කිරීම්',
       noBookings: 'ඔබට තවමත් වෙන්කිරීම් නොමැත.',
       browseProducts: 'නිෂ්පාදන බ්‍රවුස් කරන්න',
       bookedOn: 'වෙන්කරවා ගත් දිනය',
       type: 'වර්ගය',
-      
+
       // About page
       aboutUs: 'අර්බන් හාර්වෙස්ට් හබ් ගැන',
       aboutDesc: 'අධ්‍යාපනය, නිෂ්පාදන සහ සම්බන්ධතාවය තුළින් ප්‍රජාවන් තිරසාර ලෙස ජීවත් වීමට සවිබල ගැන්වීම',
@@ -287,13 +287,13 @@ export const LanguageProvider = ({ children }) => {
       meetOurTeam: 'අපගේ කණ්ඩායම හමුවන්න',
       getInTouch: 'සම්බන්ධ වන්න',
       contactText: 'ප්‍රශ්න තිබේද නැතහොත් සහයෝගයෙන් කටයුතු කිරීමට අවශ්‍යද? ඔබගෙන් ඇසීමට අපි කැමතියි!',
-      
+
       // Footer
       quickLinks: 'ඉක්මන් සබැඳි',
       contactUs: 'අමතන්න',
       followUs: 'අපව අනුගමනය කරන්න',
       allRightsReserved: 'සියලුම හිමිකම් ඇවිරිණි.',
-      
+
       // 404 page
       pageNotFound: 'පිටුව හමු නොවීය',
       pageNotFoundDesc: 'අපොයි! ඔබ සොයන පිටුව නොපවතියි හෝ ගෙන යන ලදී.'

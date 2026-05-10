@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
+import MainLogo from "../assets/img/Main_Logo.png";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -10,12 +11,12 @@ const Footer = () => {
       role="contentinfo"
     >
       <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           {/* About Section */}
-          <div>
-            <h3 className="text-xl font-bold mb-4 text-leaf">
-              Urban Harvest Hub
-            </h3>
+          <div className="flex flex-col items-center md:items-start">
+            <Link to="/">
+              <img src={MainLogo} alt="Urban Harvest Hub Logo" className="h-12 w-auto mb-4" />
+            </Link>
             <p className="text-black dark:text-white">{t("aboutDesc")}</p>
           </div>
 
@@ -77,7 +78,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">
               {t("followUs") || "Follow Us"}
             </h3>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center md:justify-start">
               <a
                 href="#"
                 className="text-black dark:text-white hover:text-leaf transition-colors focus:outline-none focus:ring-2 focus:ring-leaf"

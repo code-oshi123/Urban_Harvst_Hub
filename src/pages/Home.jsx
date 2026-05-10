@@ -116,7 +116,7 @@ const Home = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">{t('stayUpdated')}</h2>
           <p className="text-lg mb-6">{t('newsletterText')}</p>
-          <form className="max-w-md mx-auto flex gap-3" onSubmit={(e) => e.preventDefault()}>
+          <form className="max-w-md mx-auto flex flex-col sm:flex-row gap-3" onSubmit={(e) => e.preventDefault()}>
             <input
               type="email"
               placeholder={t('enterEmail')}

@@ -76,12 +76,16 @@ const About = () => {
               </p>
             </div>
             <div>
-              <img 
-                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600"
+              <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                <source src="/src/assets/img/v_1.mp4" type="video/mp4" />
+                Your browser does not support video playback.
+              </video>
+              {/* <img
+                src="/src/assets/imag/v_1.mp4"
                 alt="Community gardening together"
                 className="rounded-lg shadow-lg w-full"
                 loading="lazy"
-              />
+              /> */}
             </div>
           </div>
         </div>

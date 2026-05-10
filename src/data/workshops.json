@@ -5,13 +5,13 @@
       "title": "Urban Composting 101",
       "description": "Learn how to turn kitchen scraps into nutrient-rich soil for your plants. Perfect for apartment dwellers and small spaces.",
       "category": "Gardening",
-      "image": "https://images.unsplash.com/photo-1531226406509-1e0c09f7deab?w=400",
+      "image": "/src/assets/img/p2.jpeg",
       "date": "2026-06-15T10:00:00",
       "duration": "3 hours",
-      "instructor": "Maria Green",
+      "instructor": "Colombo",
       "price": 25,
       "availability": 15,
-      "location": "Outdoor Garden Center",
+      "location": "Colombo",
       "weather": true
     },
     {
@@ -19,7 +19,7 @@
       "title": "DIY Natural Cleaning Products",
       "description": "Make your own non-toxic cleaning products using simple ingredients like vinegar, baking soda, and essential oils.",
       "category": "Home",
-      "image": "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=400",
+      "image": "/src/assets/img/p1.jpeg",
       "date": "2026-06-20T14:00:00",
       "duration": "2 hours",
       "instructor": "John Eco",
@@ -39,7 +39,7 @@
       "instructor": "Sarah Bloom",
       "price": 35,
       "availability": 10,
-      "location": "Rooftop Garden",
+      "location": "Kandy",
       "weather": true
     },
     {

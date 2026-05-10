@@ -3,6 +3,7 @@ import { useState } from 'react'
 import DarkModeToggle from './DarkModeToggle'
 import LanguageSwitcher from './LanguageSwitcher'
 import { useLanguage } from '../context/LanguageContext'
+import MainLogo from '../assets/img/Main_Logo.png'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -27,10 +28,11 @@ const Navbar = () => {
           {/* Logo */}
           <Link 
             to="/" 
-            className="text-2xl font-bold text-forest dark:text-leaf hover:opacity-80 transition-opacity"
+            className="text-2xl font-bold text-forest dark:text-leaf hover:opacity-80 transition-opacity flex items-center gap-2"
             aria-label="Urban Harvest Hub Home"
           >
-            🌱 Urban Harvest Hub
+            <img src={MainLogo} alt="Urban Harvest Hub Logo" className="h-10 w-auto" />
+            <span className="hidden sm:inline">Urban Harvest Hub</span>
           </Link>
 
           {/* Desktop Navigation */}
