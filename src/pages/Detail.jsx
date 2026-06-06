@@ -27,6 +27,8 @@ export default function Detail() {
         <img
           src={item.image}
           alt={item.title}
+          width="800"
+          height="400"
           className="w-full h-72 object-cover rounded-2xl shadow"
         />
         <div className="mt-6">

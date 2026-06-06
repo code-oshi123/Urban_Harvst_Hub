@@ -15,7 +15,7 @@ const Footer = () => {
           {/* About Section */}
           <div className="flex flex-col items-center md:items-start">
             <Link to="/">
-              <img src={MainLogo} alt="Urban Harvest Hub Logo" className="h-12 w-auto mb-4" />
+              <img src={MainLogo} alt="Urban Harvest Hub Logo" width="48" height="48" className="h-12 w-12 object-contain mb-4" />
             </Link>
             <p className="text-black dark:text-white">{t("aboutDesc")}</p>
           </div>

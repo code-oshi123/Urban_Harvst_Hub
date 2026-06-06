@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import eventsData from '../data/events.json'
-import BookingForm from '../components/BookingForm'
 import WeatherWidget from '../components/WeatherWidget'
 import { useLanguage } from '../context/LanguageContext'
 
@@ -9,7 +8,6 @@ const EventDetails = () => {
   const { id } = useParams()
   const navigate = useNavigate()
   const { t } = useLanguage()
-  const [showBooking, setShowBooking] = useState(false)
   
   const event = eventsData.events.find(e => e.id === parseInt(id))
 
@@ -32,11 +30,7 @@ const EventDetails = () => {
   const spotsLeft = event.capacity - event.registered
   const isFullyBooked = spotsLeft === 0
 
-  const handleBooking = (formData) => {
-    console.log('Registration submitted:', { event, formData })
-    alert(`Thank you for registering for ${event.title}! We'll send you event details soon.`)
-    setShowBooking(false)
-  }
+
 
   return (
     <div className="container mx-auto px-4 py-8 animate-fade-in">
@@ -53,6 +47,8 @@ const EventDetails = () => {
           <img
             src={event.image}
             alt={event.title}
+            width="600"
+            height="450"
             className="w-full h-auto object-cover"
           />
         </div>
@@ -118,7 +114,7 @@ const EventDetails = () => {
           </div>
 
           <button
-            onClick={() => setShowBooking(true)}
+            onClick={() => navigate('/booking', { state: { item: event, type: 'event' } })}
             disabled={isFullyBooked}
             className={`btn-green w-full mt-6 ${isFullyBooked && 'opacity-50 cursor-not-allowed'}`}
           >
@@ -126,15 +122,6 @@ const EventDetails = () => {
           </button>
         </div>
       </div>
-
-      {showBooking && (
-        <BookingForm
-          item={event}
-          type="event"
-          onSubmit={handleBooking}
-          onClose={() => setShowBooking(false)}
-        />
-      )}
     </div>
   )
 }

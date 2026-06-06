@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import workshopsData from '../data/workshops.json'
-import BookingForm from '../components/BookingForm'
 import WeatherWidget from '../components/WeatherWidget'
 import { useLanguage } from '../context/LanguageContext'
 
@@ -9,7 +8,6 @@ const WorkshopDetails = () => {
   const { id } = useParams()
   const navigate = useNavigate()
   const { t } = useLanguage()
-  const [showBooking, setShowBooking] = useState(false)
   
   const workshop = workshopsData.workshops.find(w => w.id === parseInt(id))
 
@@ -29,11 +27,7 @@ const WorkshopDetails = () => {
     return new Date(dateString).toLocaleDateString(undefined, options)
   }
 
-  const handleBooking = (formData) => {
-    console.log('Booking submitted:', { workshop, formData })
-    alert(`Thank you for registering for ${workshop.title}! You'll receive a confirmation email soon.`)
-    setShowBooking(false)
-  }
+
 
   return (
     <div className="container mx-auto px-4 py-8 animate-fade-in">
@@ -50,6 +44,8 @@ const WorkshopDetails = () => {
           <img
             src={workshop.image}
             alt={workshop.title}
+            width="600"
+            height="450"
             className="w-full h-auto object-cover"
           />
         </div>
@@ -118,22 +114,13 @@ const WorkshopDetails = () => {
           </div>
 
           <button
-            onClick={() => setShowBooking(true)}
+            onClick={() => navigate('/booking', { state: { item: workshop, type: 'workshop' } })}
             className="btn-green w-full mt-6"
           >
             {t('register')}
           </button>
         </div>
       </div>
-
-      {showBooking && (
-        <BookingForm
-          item={workshop}
-          type="workshop"
-          onSubmit={handleBooking}
-          onClose={() => setShowBooking(false)}
-        />
-      )}
     </div>
   )
 }

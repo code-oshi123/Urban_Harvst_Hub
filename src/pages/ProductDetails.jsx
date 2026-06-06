@@ -1,14 +1,12 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import productsData from '../data/products.json'
-import BookingForm from '../components/BookingForm'
 import { useLanguage } from '../context/LanguageContext'
 
 const ProductDetails = () => {
   const { id } = useParams()
   const navigate = useNavigate()
   const { t } = useLanguage()
-  const [showBooking, setShowBooking] = useState(false)
   
   const product = productsData.products.find(p => p.id === parseInt(id))
 
@@ -23,11 +21,7 @@ const ProductDetails = () => {
     )
   }
 
-  const handleBooking = (formData) => {
-    console.log('Booking submitted:', { product, formData })
-    alert(`Thank you for your interest in ${product.name}! We'll contact you soon.`)
-    setShowBooking(false)
-  }
+
 
   return (
     <div className="container mx-auto px-4 py-8 animate-fade-in">
@@ -44,6 +38,8 @@ const ProductDetails = () => {
           <img
             src={product.image}
             alt={product.name}
+            width="600"
+            height="450"
             className="w-full h-auto object-cover"
           />
         </div>
@@ -94,7 +90,7 @@ const ProductDetails = () => {
           </div>
 
           <button
-            onClick={() => setShowBooking(true)}
+            onClick={() => navigate('/booking', { state: { item: product, type: 'product' } })}
             disabled={!product.availability}
             className={`btn-green w-full mt-6 ${!product.availability && 'opacity-50 cursor-not-allowed'}`}
           >
@@ -102,15 +98,6 @@ const ProductDetails = () => {
           </button>
         </div>
       </div>
-
-      {showBooking && (
-        <BookingForm
-          item={product}
-          type="product"
-          onSubmit={handleBooking}
-          onClose={() => setShowBooking(false)}
-        />
-      )}
     </div>
   )
 }

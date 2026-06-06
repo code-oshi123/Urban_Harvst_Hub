@@ -29,6 +29,8 @@ const EventCard = ({ event }) => {
         <img 
           src={event.image} 
           alt={event.title}
+          width="400"
+          height="300"
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
           loading="lazy"
         />

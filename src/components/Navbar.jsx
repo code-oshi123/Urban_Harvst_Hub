@@ -31,7 +31,7 @@ const Navbar = () => {
             className="text-2xl font-bold text-forest dark:text-leaf hover:opacity-80 transition-opacity flex items-center gap-2"
             aria-label="Urban Harvest Hub Home"
           >
-            <img src={MainLogo} alt="Urban Harvest Hub Logo" className="h-10 w-auto" />
+            <img src={MainLogo} alt="Urban Harvest Hub Logo" width="40" height="40" className="h-10 w-10 object-contain" />
             <span className="hidden sm:inline">Urban Harvest Hub</span>
           </Link>
 

@@ -1,7 +1,28 @@
 import { useLanguage } from '../context/LanguageContext'
+import { useState, useEffect, useRef } from 'react'
 
 const About = () => {
   const { t } = useLanguage()
+  const [videoLoaded, setVideoLoaded] = useState(false)
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVideoLoaded(true)
+          observer.disconnect()
+        }
+      },
+      { rootMargin: '200px' }
+    )
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <div className="animate-fade-in">
@@ -75,17 +96,29 @@ const About = () => {
                 {t('storyText3')}
               </p>
             </div>
-            <div>
-              <video class="w-full h-full object-cover" autoplay loop muted playsinline>
-                <source src="/src/assets/img/v_1.mp4" type="video/mp4" />
-                Your browser does not support video playback.
-              </video>
-              {/* <img
-                src="/src/assets/imag/v_1.mp4"
-                alt="Community gardening together"
-                className="rounded-lg shadow-lg w-full"
-                loading="lazy"
-              /> */}
+            <div ref={videoRef} className="rounded-lg overflow-hidden shadow-lg aspect-video bg-gray-200 dark:bg-gray-700 relative min-h-[300px] flex items-center justify-center">
+              {videoLoaded ? (
+                <video 
+                  className="w-full h-full object-cover" 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  width="640"
+                  height="360"
+                >
+                  <source src="/src/assets/img/v_1.mp4" type="video/mp4" />
+                  Your browser does not support video playback.
+                </video>
+              ) : (
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-gray-500 dark:text-gray-400">
+                  <svg className="w-8 h-8 animate-spin" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                  </svg>
+                  <span>Loading video...</span>
+                </div>
+              )}
             </div>
           </div>
         </div>
