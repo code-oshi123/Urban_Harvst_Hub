@@ -1,12 +1,26 @@
 const HeroBanner = ({ title, subtitle, backgroundImage, buttonText, onButtonClick }) => {
+  // Use responsive image sources with WebP format
+  const imageUrl = backgroundImage || 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&fm=webp&q=80'
+  const imageSrcSet = backgroundImage ? undefined : 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&fm=webp&q=80 800w, https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&fm=webp&q=80 1200w, https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1600&fm=webp&q=80 1600w'
+
   return (
     <section 
-      className="relative bg-cover bg-center h-96 flex items-center justify-center"
-      style={{ backgroundImage: `url(${backgroundImage || 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200'})` }}
+      className="relative h-96 flex items-center justify-center overflow-hidden"
       aria-label="Hero banner"
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div className="relative z-10 text-center text-white px-4">
+      <img 
+        src={imageUrl}
+        srcSet={imageSrcSet}
+        sizes="100vw"
+        alt="Urban Harvest Hub - Sustainable living"
+        fetchPriority="high"
+        loading="eager"
+        width="1600"
+        height="1024"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+      <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+      <div className="relative z-20 text-center text-white px-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-fade-in">
           {title}
         </h1>
