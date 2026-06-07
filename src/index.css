@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,7 +11,7 @@
            focus:outline-none focus:ring-2 focus:ring-leaf focus:ring-offset-2
            dark:focus:ring-offset-gray-800;
   }
-  
+
   .btn-green-outline {
     @apply border-2 border-forest text-forest px-6 py-2 rounded-lg font-semibold 
            transition-all duration-300 hover:bg-forest hover:text-white
@@ -23,12 +23,17 @@
   * {
     @apply transition-colors duration-200;
   }
-  
+
   body {
     @apply font-poppins bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-bold;
   }
 }

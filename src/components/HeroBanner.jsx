@@ -1,14 +1,24 @@
-const HeroBanner = ({ title, subtitle, backgroundImage, buttonText, onButtonClick }) => {
+const HeroBanner = ({
+  title,
+  subtitle,
+  backgroundImage,
+  buttonText,
+  onButtonClick,
+}) => {
   // Use responsive image sources with WebP format
-  const imageUrl = backgroundImage || 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&fm=webp&q=80'
-  const imageSrcSet = backgroundImage ? undefined : 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&fm=webp&q=80 800w, https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&fm=webp&q=80 1200w, https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1600&fm=webp&q=80 1600w'
+  const imageUrl =
+    backgroundImage ||
+    "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&fm=webp&q=80";
+  const imageSrcSet = backgroundImage
+    ? undefined
+    : "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&fm=webp&q=80 800w, https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&fm=webp&q=80 1200w, https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1600&fm=webp&q=80 1600w";
 
   return (
-    <section 
+    <section
       className="relative h-96 flex items-center justify-center overflow-hidden"
       aria-label="Hero banner"
     >
-      <img 
+      <img
         src={imageUrl}
         srcSet={imageSrcSet}
         sizes="100vw"
@@ -25,9 +35,7 @@ const HeroBanner = ({ title, subtitle, backgroundImage, buttonText, onButtonClic
           {title}
         </h1>
         {subtitle && (
-          <p className="text-xl md:text-2xl mb-8 animate-fade-in">
-            {subtitle}
-          </p>
+          <p className="text-xl md:text-2xl mb-8 animate-fade-in">{subtitle}</p>
         )}
         {buttonText && onButtonClick && (
           <button
@@ -40,7 +48,7 @@ const HeroBanner = ({ title, subtitle, backgroundImage, buttonText, onButtonClic
         )}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroBanner
+export default HeroBanner;
