@@ -107,7 +107,7 @@ const About = () => {
                   width="640"
                   height="360"
                 >
-                  <source src="/src/assets/img/v_1.mp4" type="video/mp4" />
+                  <source src="https://www.pexels.com/download/video/7421652/" type="video/mp4" />
                   Your browser does not support video playback.
                 </video>
               ) : (
